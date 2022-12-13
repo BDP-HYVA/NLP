@@ -5,11 +5,11 @@ from konlpy.tag import Okt
 
 okt = Okt()
 spacing = Spacing(rules=[''])
-spacing.set_rules_by_csv('./love.csv')
+spacing.set_rules_by_csv('./input_data.csv')
 
-f = open("./love.csv", 'r')
+f = open("./input_data.csv", 'r')
 rdr = csv.reader(f)
-with open('my_real_love.csv', 'w', encoding='utf-8') as p:
+with open('output_data.csv', 'w', encoding='utf-8') as p:
     writer=csv.writer(p)
     for line in rdr:
         ans = []
