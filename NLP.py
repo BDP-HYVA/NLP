@@ -7,7 +7,7 @@ okt = Okt()
 spacing = Spacing(rules=[''])
 spacing.set_rules_by_csv('./input_data.csv')
 
-stop_words = ["홍대", "연남동", "서울특별시", "마포구"]
+stop_words = ["홍대", "연남동", "서울특별시", "마포구", "신촌", "건대", "명동", "명지대", "강남"] #인근 지역 명 추가
 
 a = open("./stopwords-ko.txt", 'r')
 aread = csv.reader(a)
